@@ -1,0 +1,23 @@
+INSTRUCTION FOR RUNNING THE CODE
+
+STEP 1: Open the terminal and go to the folder where your code file(crop.cpp (in my case)) is placed and open the folder in terminal.
+
+STEP 2: After that we compile our code for compiling just use the command : "make compile"(Remember that the file makefile also placed the same folder whch containg the crop.cpp).
+
+ALTERNATIVE STETP 2: For compiling you use the command : "g++ crop.cpp -o testoutput2 -std=c++11 `pkg-config --cflags --libs opencv`".
+
+STEP 3: After compiling we run our code for running just use the command : "make run".
+
+ALTERNATIVE STEP 3: For running the code you use the command : "./testoutput2".
+
+STEP 4: After calling "make run" command just give the path of the image that you wanted to crop and press enter key.
+
+ALTERNATIVE STEP 4: Give the path of the image : "empty.jpg".
+ 
+STEP 5: After pressing enter you seen that a image is open named with "Original Frame" and select the four points using mouse click which you want to find project and press any other key.
+
+STEP 6: After that we see that image named with "Projected Frame" after that select two points you want to crop the image(chise the points are leftup and rightdown cornors).
+
+STEP 7: After all the above step clear the files with are made due to calling make run and compile just use the command : "make clear"
+
+STEP 8: You go to the folder containing file crop.cpp and you see that two images named "Projected Frame" and "Cropped Frame" are saved. where Projected framis is the image of the projected frame that we select using the four mouseclick and cropped frame is the image of cropped image that we select using two mouse clicks.
